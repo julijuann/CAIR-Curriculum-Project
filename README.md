@@ -102,92 +102,79 @@ jupyter notebook
 medical-insurance-prediction/
 │
 ├── data/
-│   ├── raw/                      # Original dataset
-│   │   └── insurance.csv
-│   └── processed/                # Processed datasets
-│       └── insurance_processed.csv
+│   └── raw/
+│       └── insurance.csv          # Original dataset (downloaded from Kaggle)
 │
-├── notebooks/                    # Jupyter notebooks
-│   ├── 01_EDA.ipynb             # Exploratory Data Analysis
-│   ├── 02_Preprocessing.ipynb    # Data preprocessing & feature engineering
-│   ├── 03_Linear_Models.ipynb    # Linear regression models
-│   ├── 04_Tree_Models.ipynb      # Tree-based models
-│   ├── 05_Other_Models.ipynb     # SVR, KNN, Neural Networks
-│   ├── 06_Evaluation.ipynb       # Model evaluation & comparison
-│   └── 07_Interpretability.ipynb # SHAP analysis & feature importance
+├── notebooks/
+│   └── Student_Template_Medical_Insurance_ML.ipynb
+│                                  # Primary student-facing notebook
+│                                  # Contains guided sections and TODOs
 │
-├── src/                          # Source code modules
-│   ├── __init__.py
-│   ├── data_loader.py           # Data loading utilities
-│   ├── preprocessing.py          # Preprocessing functions
-│   ├── feature_engineering.py    # Feature creation functions
-│   ├── models.py                 # Model training utilities
-│   ├── evaluation.py             # Evaluation metrics & functions
-│   └── visualization.py          # Plotting utilities
+├── reports/
+│   ├── figures/                   # Figures generated for final report
+│   └── CAIR_Project_Report.pdf    # Final written report (student-generated)
 │
-├── models/                       # Saved model artifacts
-│   ├── linear_regression.pkl
-│   ├── random_forest.pkl
-│   ├── gradient_boosting.pkl
-│   └── best_model.pkl
+├── CAIR_Medical_Insurance_Project_Structure.md
+│                                  # Detailed project outline & timeline
 │
-├── reports/                      # Reports and presentations
-│   ├── figures/                  # Generated plots and charts
-│   ├── final_report.pdf          # Comprehensive project report
-│   └── presentation.pptx         # Presentation slides
+├── CAIR_Project_Report_Template.md
+│                                  # Structured template for final report
 │
-├── .gitignore                    # Git ignore file
-├── requirements.txt              # Python dependencies
-├── README.md                     # This file
-└── LICENSE                       # MIT License
+├── requirements.txt               # Python dependencies
+├── README.md                      # Project overview and instructions
+└── LICENSE                        # MIT License
+
 ```
 
-## 🚀 Usage
+## Usage
 
-### Running the Analysis
+### Running the Project
 
-Execute notebooks in sequential order:
+This project is designed to be completed **entirely within a single Jupyter notebook**.
 
-**1. Exploratory Data Analysis:**
+1. **Launch Jupyter Notebook**
 ```bash
-jupyter notebook notebooks/01_EDA.ipynb
+jupyter notebook
+````
+
+2. **Open the student template notebook**
+
 ```
-- Understand data distributions
-- Identify correlations
-- Detect outliers and patterns
-
-**2. Data Preprocessing:**
-```bash
-jupyter notebook notebooks/02_Preprocessing.ipynb
+notebooks/Student_Template_Medical_Insurance_ML.ipynb
 ```
-- Handle categorical variables
-- Engineer new features
-- Scale numerical features
-- Split into train/test sets
 
-**3. Model Training:**
+3. **Work through the notebook sequentially**, completing each section as instructed:
 
-Run model notebooks:
-- `03_Linear_Models.ipynb`: Linear, Ridge, Lasso, ElasticNet
-- `04_Tree_Models.ipynb`: Decision Tree, Random Forest, Gradient Boosting
-- `05_Other_Models.ipynb`: SVR, KNN, Neural Networks
+   * Data loading and initial inspection
+   * Exploratory Data Analysis (EDA)
+   * Data preprocessing and feature engineering
+   * Model training across multiple model families
+   * Model evaluation and comparison
+   * Model interpretability and discussion
 
-**4. Model Evaluation:**
-```bash
-jupyter notebook notebooks/06_Evaluation.ipynb
-```
-- Compare all models
-- Residual analysis
-- Cross-validation results
-- Select best model
+Each section builds on the previous one, mirroring a real-world end-to-end machine learning workflow.
 
-**5. Model Interpretability:**
-```bash
-jupyter notebook notebooks/07_Interpretability.ipynb
-```
-- Feature importance analysis
-- SHAP values
-- Partial dependence plots
+---
+
+### Expected Student Workflow
+
+* Students complete all code and written responses directly in the provided template notebook
+* Visualizations and results generated in the notebook are reused for:
+
+  * The final written report
+  * Presentation slides
+* The completed notebook serves as:
+
+  * A reproducible ML pipeline
+  * A portfolio-ready artifact demonstrating applied machine learning skills
+
+---
+
+### Instructor Workflow (For Reference)
+
+* Instruction is delivered using a separate **master notebook** that mirrors the student template structure
+* The master notebook contains fully implemented code and is used for live teaching and demonstrations
+* The instructor master notebook is intentionally **not included** in this repository
 
 ### Using Python Scripts
 
